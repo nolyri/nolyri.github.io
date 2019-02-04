@@ -1,0 +1,214 @@
+
+	
+/** navigation bar (fixed at top) **/
+	.navbar {
+		background-color: black;
+		opacity: 0.65;
+		position: fixed;
+		top: 0;
+		width: 100%;  
+	}
+	
+	.navbar a {
+		float: left;
+		display: block;
+		color:  white;
+		text-align: center;
+		padding: 21px 14px; 
+		text-decoration: none;
+		font-size: 25px;
+		font-weight: bold;
+		font-family: arial;	
+	}
+	
+	.navbar a:hover {
+		background-color: red;
+	}
+	
+	.dropdown {
+		float: left;
+		overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+		font-size: 25px;  
+		font-weight: bold;
+		font-family: arial;	
+		border: none;
+		outline: none;
+		color: white;
+		padding: 21px 14px;
+		background-color: inherit;
+		margin: 0;
+	}
+
+	.dropdown:hover .dropbtn {
+		background-color: red;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		min-width: 177px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		float: none;
+		color: black;
+		font-size: 16px;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+
+	.dropdown-content a:hover {
+		background-color: #ddd;
+	}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+
+	
+	
+/** top banner **/
+	#banner {
+		top: 0;
+		text-align: center;
+		background: url(https://eatmightymeals.com/wp-content/uploads/2018/09/MightyMeals_Banner2-1-600x400@2x.jpg);
+		background-repeat:no-repeat;
+		background-size: 100% 800px;
+	}
+		
+	#banner_text {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%); 
+	}
+	
+/** modal sign in window **/
+	input[type=text], input[type=password] {
+		width: 100%;
+		padding: 12px 20px;
+		margin: 8px 0;
+		display: inline-block;
+		border: 1px solid #ccc;
+		box-sizing: border-box;
+	}
+		
+	.btn {
+		background-color: #4CAF50;
+		color: white;
+		padding: 14px 20px;
+		margin: 8px 0;
+		border: none;
+		cursor: pointer;
+		width: 100%;
+	}
+		
+	.btn:hover {
+		opacity: 0.7;
+	}
+		
+	.imgcontainer {
+		text-align: center;
+		margin: 24px 0 12px 0;
+		position: relative;
+	}
+		
+	.container {
+		padding: 16px;
+	}
+		
+	span.psw {
+		float: right;
+	}
+		
+	label.rht {
+		display: inline-block;
+		width: 140px;
+		text-align: right;
+	}
+	
+	.modal {
+		display: none;
+		position: fixed;
+		z-index: 1;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgb(0,0,0);
+		background-color: rgba(0,0,0,0.4);
+		padding-top: 60px;
+	}
+		
+	.modal-content {
+		background-color: #fefefe;
+		margin: 5% auto 15% auto;
+		border: 1px solid #888;
+		width: 50%;
+	}
+			
+	.close {
+		position: absolute;
+		right: 25px;
+		top: 0;
+		color: #000;
+		font-size: 35px;
+		font-weight: bold;
+	}
+		
+	.close:hover, .close:focus {
+		color: red;
+		cursor: pointer;
+	}
+		
+/** modal animation **/
+	.animate {
+		-webkit-animation: animatezoom 0.6s;
+		animation: animatezoom 0.6s
+	}
+
+	@-webkit-keyframes animatezoom {
+		from {-webkit-transform: scale(0)} 
+		to {-webkit-transform: scale(1)}
+	}
+  
+	@keyframes animatezoom {
+		from {transform: scale(0)} 
+		to {transform: scale(1)}
+	}
+		
+	@media screen and (max-width: 300px) {
+		span.psw {
+			display: block;
+			float: none;
+		}
+	}
+		
+/** bottom quad **/
+	.btmquad {
+	 margin: 0 0 0 10%;
+	 font-family: arial;
+		
+	
+	
+	}
+	
+	.btmquad a {
+			color: white;
+	}
+	
+	.btmquad a:hover {
+			background-color: red;
+	}
+
+
+	
