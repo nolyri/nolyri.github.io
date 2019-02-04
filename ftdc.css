@@ -193,22 +193,34 @@
 		}
 	}
 		
-/** bottom quad **/
+/** bottom menu **/
+	.btmmenu:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
 	.btmquad {
-	 margin: 0 0 0 10%;
-	 font-family: arial;
-		
-	
-	
+		font-family: arial;
+		float: left;
+		width: 20%;
 	}
 	
-	.btmquad a {
-			color: white;
+	.btmquad2 {
+		font-family: arial;
+		float: left;
+		width: 30%;
+	}
+	
+	.btmquad a, .btmquad2 a {
+		color: white;
+		text-decoration: none;
 	}
 	
 	.btmquad a:hover {
-			background-color: red;
+		background-color: red;
 	}
+
 
 
 	
