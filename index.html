@@ -8,51 +8,46 @@
 	<title>
 		Food Trek DC
 	</title>
+	<script type="text/javascript" src="ftdc.js"></script>
 </head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="ftdc.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Charm" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-<script src="ftdc.js"></script>
 
 <body>
 	<!-- navigation bar -->
 	<div class="navbar">
 		<a href="index.html" style="padding:0 4;"><img src="icon.ico" style="height:70px;width:auto;"></a>
-		
-		<div class="dropdown">
-			<button class="dropbtn">
-				Categories
-				<i class="fa fa-caret-down"></i>
-			</button>
-			<div class="dropdown-content">
-				<a href="#">Fast Food</a>
-				<a href="#">Fast Casual</a>
-				<a href="#">Casual Dining</a>
-				<a href="#">Premium Casual</a>
-				<a href="#">Fine Dining</a>
+		<div class="navbar2">
+			<div class="dropdown">
+				<button class="dropbtn">
+					Categories
+					<i class="fa fa-caret-down"></i>
+				</button>
+				<div class="dropdown-content">
+					<a href="#">Fast Food</a>
+					<a href="#">Fast Casual</a>
+					<a href="#">Casual Dining</a>
+					<a href="#">Premium Casual</a>
+					<a href="#">Fine Dining</a>
+				</div>
 			</div>
+			<a href="#explore">Explore Around</a>
+			<a href="deal.html">Today's Deal</a>
+			<a href="#reservations">Reservations</a>
+			<a href="#faq">FAQ</a>	
+			
+			
+			<a style="float:right;font-size:20px;" onclick="document.getElementById('id01').style.display='block'">
+				<img src="user.png" style="height:28px;width:28px;vertical-align:middle;">
+				Sign In/Sign Up &nbsp
+			</a>
 		</div>
-		
-		<a href="#explore">Explore Around</a>
-		<a href="#deal">Today's Deal</a>
-		<a href="#reservations">Reservations</a>
-		<a href="#faq">FAQ</a>	
-		
-		<a style="float:right;font-size:20px;" onclick="document.getElementById('id01').style.display='block'">
-			<img src="https://strategichealthcare.net/wp-content/uploads/2016/11/icon-user-200x200.png" style="height:28px;width:28px;vertical-align:middle;">
-			Sign In/Sign Up &nbsp
-		</a>
-	</div>
-
-	<!-- top banner -->
-	<div id="banner">
-		<br></br> 
-		<p style="font-size:64px;font-family:helvetica;font-weight:bold;color:white;">Food Trek DC</p>
-		<p style="font-size:30px;font-family:comic sans ms;font-weight:bold;color:white;"><i>Boost Your Trip with Great Food</i></p>
-		<br></br>
 	</div>
 	
 	<!-- sign in window (pop up)-->
@@ -85,11 +80,12 @@
 		</form>
 	</div>
 	
+
 	<!-- sign up window (pop up) -->
 	<div id="id02" class="modal">
 		<form class="modal-content animate" action="#">
 			<div class="imgcontainer">
-				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close">&times; </span>
+				<span onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='none'" class="close" title="Close">&times; </span>
 				<img src="logo3.png" style="height:120px;width:auto;">
 			</div>
 			
@@ -112,10 +108,58 @@
 			</div>
 		</form>
 	</div>
-	
-	<!-- bottom menu -->
-	<div>
+
+	<!-- top banner -->
+	<div id="banner">
+		<br></br> 
+		<p style="font-size:64px;font-family:helvetica;font-weight:bold;color:white;">Food Trek DC</p>
+		<p style="font-size:30px;font-family:comic sans ms;font-weight:bold;color:white;"><i>Boost Your Trip with Great Food</i></p>
+		<br></br>
 	</div>
+	
+	<!-- intro -->
+	<div style="display:inline-block;vertical-align:top;">
+		<img alt="dc food" src="intro.png" style="margin-top:0.2%;width:30%;vertical-align:top;" />
+		<div style="display:inline-block;max-width:70%;float:right;" align="left">
+			<p class="intro">
+			Dig in to one of the country’s hottest restaurant scenes </br>– the nation’s capital is a can’t-miss culinary destination.
+			</p>
+			
+			<p class="intro2">
+			When you visit Washington, DC, you’ll experience a dining scene as colorful and eclectic as America itself. The District is rolling in accolades, as the city received its second Michelin Guide and was named restaurant city of the year by Bon Appétit and hottest food city by Zagat in 2016. That means you can expect each meal at every restaurant to be different. From crave-worthy dishes served by celebrity chefs to chili-smothered half-smokes served at a diner, DC’s local flavor has one thing in common: it’s all delicious. Get a taste of what’s to come.
+			</p>
+		</div>
+	</div>
+	
+	<!-- middle intro -->
+	<div style="display:inline-block;vertical-align:top;">
+		<img alt="dc food" src="middle.png" style="margin-top:0.2%;width:30%;vertical-align:top;" />
+		<div style="display:inline-block;max-width:70%;float:left;" align="left">
+			<p class="intro">
+			Get a taste of the DC food scene and discover the best places to eat, drink and more in the nation's capital.
+			</p>
+			
+			<p class="intro2">
+			Dive in before you dig in. Your exploration of culinary mastery in the District can go on and on. Read up on popular restaurants and dishes, standout chefs, affordable and family dining, and special culinary experiences to be enjoyed across the city.
+			</p>
+		</div>
+	</div>	
+	
+	<!-- end intro -->
+	<div style="display:inline-block;vertical-align:top;">
+		<img alt="dc food" src="end.png" style="margin-top:0.2%;width:30%;height:50%;vertical-align:top;" />
+		<div style="display:inline-block;max-width:70%;float:right;" align="left">
+			<p class="intro">
+			Indulge in the most travel-worthy culinary experiences at these restaurants with Michelin stars throughout DC.
+			</p>
+			
+			<p class="intro2">
+			The Michelin selections are in, and DC’s dining scene is as hot as it’s ever been. So why all the buzz? The District is home to a distinct landscape of diverse cuisines and perfectly cooked dishes, all of which are waiting to be devoured. Don’t just take our word for it. Check out these Michelin Guide highlights and make sure to book your tables early.
+			</p>
+		</div>
+	</div>
+	
+
 	
 
 	
@@ -125,35 +169,12 @@
 	<!-- side navigation for categories page-->
 	
 	
-	<!-- sticky social bar-->
-	
-	
-	
-	
-<!-- test text -->	 <!-- test text -->	  <!-- test text -->	  <!-- test text -->	  <!-- test text -->		
-<div style="color:green;font-size:20px;">
 
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-  <p>Some text some text some text some text..</p>
-</div>
+	
+	
+	
+	
+
 
 	<!-- bottom menu-->
 	<div class="btmmenu" style="background-color:black;opacity:0.65;font-color:white;">

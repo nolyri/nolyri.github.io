@@ -1,4 +1,7 @@
-
+/** background color**/
+	body {
+		background-color: rgb(247, 247, 247);
+	}
 	
 /** navigation bar (fixed at top) **/
 	.navbar {
@@ -20,8 +23,20 @@
 		font-weight: bold;
 		font-family: arial;	
 	}
+
+	.navbar2 a {
+		float: left;
+		display: block;
+		color:  white;
+		text-align: center;
+		padding: 21px 14px; 
+		text-decoration: none;
+		font-size: 25px;
+		font-weight: bold;
+		font-family: arial;	
+	}
 	
-	.navbar a:hover {
+	.navbar2 a:hover {
 		background-color: red;
 	}
 	
@@ -79,7 +94,7 @@
 	#banner {
 		top: 0;
 		text-align: center;
-		background: url(https://eatmightymeals.com/wp-content/uploads/2018/09/MightyMeals_Banner2-1-600x400@2x.jpg);
+		background: url("././images/bannerpic1.png");
 		background-repeat:no-repeat;
 		background-size: 100% 800px;
 	}
@@ -192,7 +207,84 @@
 			float: none;
 		}
 	}
+	
+/** intro **/
+	.intro {
+		font-family: 'Charm', cursive;
+		color: #406779;
+		font-size: 34px;
+		font-style: italic;
+		font-weight: 500;
+		padding: 0 5% 0 5%;
+		line-height: 1.5;
+	}	
+	
+	.intro2 {
+		font-family: 'Lato', sans-serif;
+		font-size: 18px;
+		padding: 0 5% 0 5%;
+		line-height: 1.7;
+	}	
+	
+/** divisions for deal page**/
+	.dealbody {
+		width: 100%;
+		height: 700px;
+		padding: 10px;
+		display: inline-block;
+	}
+
+	.dealmiddle {
+		margin-top: 5%;
+		margin-left: 7%;
+		width: 60%;
+		height: 700px;
+		float: left;
+	}
+	
+	.dealright {
+		margin-top: 10%;
+		margin-right: 3%;
+		height: 700px;
+		float: right;
+	}
 		
+/** slides show **/
+	.dealSlides {
+		display: none;
+	}
+	
+/** hot deal list **/
+	.deals {
+		width: 30%;
+		padding: 3% 5% 0 0;
+		vertical-align: top;
+	}
+	
+	.dealslink {
+		display: inline-block;
+		padding: 3% 0 2% 0;
+		font-size: 21px;
+		font-family: arial;
+		font-weight: bold;
+		text-decoration: none;
+		color: purple;
+	}
+	
+	.dealsdetail {
+		display: inline-block;
+		padding: 1% 0 0 0;
+		font-size: 15px;
+		font-family: arial;
+		color: grey;
+		width: 190px;
+		word-break: break-all;
+		white-space: normal;
+	}	
+
+
+
+	
 /** bottom menu **/
 	.btmmenu:after {
 		content: "";
@@ -221,6 +313,51 @@
 		background-color: red;
 	}
 
+/** sticky social bar **/
+	.socialbar {
+		position: fixed;
+		top: 45%;
+		-webkit-transform: translateY(-50%);
+		-ms-transform: translateY(-50%);
+		transform: translateY(-50%);
+	}
+	
+	.socialbar a {
+		display: block;
+		text-align: center;
+		padding: 16px;
+		transition: all 0.3s ease;
+		color: white;
+		font-size: 20px;
+	}
+	
+	.socialbar a:hover {
+		background-color: #000;
+	}
+	
+	.facebook {
+		background: #3B5998;
+		color: white;
+	}
 
+	.twitter {
+		background: #55ACEE;
+		color: white;
+	}
+
+	.google {
+		background: #dd4b39;
+		color: white;
+	}
+
+	.linkedin {
+		background: #007bb5;
+		color: white;
+	}
+
+	.youtube {
+		background: #bb0000;
+		color: white;
+	}
 
 	
