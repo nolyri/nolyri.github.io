@@ -40,7 +40,7 @@
 			</div>
 			<a href="#explore">Explore Around</a>
 			<a href="deal.html">Today's Deal</a>
-			<a href="#reservations">Reservations</a>
+			<a href="reservations.html">Reservations</a>
 			<a href="#faq">FAQ</a>	
 			
 			
@@ -51,7 +51,102 @@
 		</div>
 	</div>
 	
-		<!-- sign in window (pop up)-->
+	<!-- calories calculator (pop up)-->
+	<div id="id03" class="modal_cal">
+		<form class="modal-content animate" action="#">
+			<div class="imgcontainer_cal">
+				<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close">&times; </span>
+				<img src="logo3.png" style="height:60px;width:auto;" align="middle" />
+				<b style="font-family:arial;font-size:26px;padding-right:10%;"> <i> Calories Calculator <i style="font-size:20px"> (per serving) </i> </i> </b>
+			</div>
+				
+			<div class="container">			
+				<p>
+					<label style="font-size:20"> <b> Breakfast </b> </label>
+					<Select id="B1" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected disabled> Beverage </option>
+						<option value="30">tea</option> <!-- 30 cal -->
+						<option value="380">latte</option> <!-- 380 cal -->
+						<option value="149">whole milk</option> <!-- 149 cal -->
+					</select>
+					
+					<Select id="B2" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected disabled> Main </option>						
+						<option value="190">bagel</option> <!-- 190 cal -->
+						<option value="126">toast</option> <!-- 126 cal -->
+						<option value="118">cereal</option>  <!-- 118 cal -->
+						
+					</select>
+					
+					<Select id="B3" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected disabled> Sides </option>
+						<option value="72"> eggs </option> <!-- 72 cal -->
+						<option value="127"> fries </option> <!-- 127 cal -->
+						<option value="55"> fruits </option> <!-- 55 cal -->
+					</select>					
+				</p>
+				
+				<p>
+					<label style="font-size:20;margin-right:5%;"> <b> Lunch </b> </label>
+					<Select id="L1" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Beverage </option>
+						<option value="101"> soda </option> <!-- 101 cal -->
+						<option value="153"> beer </option> <!-- 153 cal -->
+						<option value="122"> wine </option> <!-- 122 cal -->
+					</select>
+					
+					<Select id="L2" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Main </option>
+						<option value="213"> beef </option> <!-- 213 cal -->
+						<option value="158"> chicken </option> <!-- 158 cal -->
+						<option value="79"> vegetarian </option>  <!-- 79 cal -->
+					</select>
+					
+					<Select id="L3" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Sides </option>
+						<option value="149"> pasta </option> <!-- 149 cal -->
+						<option value="127"> fries </option> <!-- 127 cal -->
+						<option value="73"> salad </option> <!-- 73 cal -->
+					</select>					
+				</p>
+
+				<p>
+					<label style="font-size:20;margin-right:4.4%;"> <b> Dinner </b> </label>
+					<Select id="D1" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Beverage </option>
+						<option value="101"> soda </option> <!-- 101 cal -->
+						<option value="153"> beer </option> <!-- 153 cal -->
+						<option value="122"> wine </option> <!-- 122 cal -->
+					</select>
+					
+					<Select id="D2" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Main </option>
+						<option value="213"> beef </option> <!-- 213 cal -->
+						<option value="158"> chicken </option> <!-- 158 cal -->
+						<option value="79"> vegetarian </option>  <!-- 79 cal -->
+					</select>
+					
+					<Select id="D3" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Sides </option>
+						<option value="149"> pasta </option> <!-- 149 cal -->
+						<option value="127"> fries </option> <!-- 127 cal -->
+						<option value="73"> salad </option> <!-- 73 cal -->
+					</select>						
+				</p>
+				
+				<p align="center" style="text-align:center;font-size:20;line-height:1.5;margin-top:2%;">
+					<label style="" > <b> Total calories: </b> </label>
+					<output disabled id="calNumber" style="padding-left:5%;font-size:25;">  </output>
+				</p>
+				
+				<input type="button" value="Calculate" class="btn" onclick="calCalculator()" />
+				
+				<label style="color:grey;letter-spacing:-0.1;"> <i> All calculations are based on estimations. FTDC reserves the right of final explanation.</i> </label>
+			</div>
+		</form>
+	</div>	
+	
+	<!-- sign in window (pop up)-->
 	<div id="id01" class="modal">
 		<form class="modal-content animate" action="#">
 			<div class="imgcontainer">

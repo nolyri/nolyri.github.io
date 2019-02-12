@@ -8,16 +8,16 @@
 	<title>
 		Food Trek DC
 	</title>
-</head>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="ftdc.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-<script type="text/JavaScript" src="ftdc.js"></script>
+<script src="ftdc.js"></script>
 
-
+</head>
 
 
 <body>
@@ -213,75 +213,119 @@
 		<a href="#" class="youtube"> <i class="fa fa-youtube"></i> </a> 
 	</div>
 	
-	<section class="dealbody">
-		<!-- main content-->
-		<div class="dealmiddle" style="max-width:75%;font-family:arial;">
-			<p style="color:darkred;text-align:center;font-size:48px;font-weight:bold;"> HOT RESTAURANTS TO TRY NOW IN WASHINGTON, DC </p>
-			
-			<p style="font-size:18px;line-height:1.5;">In case you missed it, the nation's capital has officially become a top tier foodie destination with a stream of accolades. The District has a Michelin Guide, was named Bon Appetit's restaurant city of the year and Zagat's hottest food city in 2016 and multiple restaurants, Elle, Maydan and The LINE Hotel's three dining concepts - A Rake's Progress, Brothers and Sisters, and Spoken English - landed on Bon Appetit's list of America's 50 best new restaurants for 2018. </p>
-
-			<p style="font-size:18px;line-height:1.5;">When you visit this year, you will see a Washington, DC that boasts a dining scene full of new concepts and reinvigorated favorites that generate buzz and bookings <a href="reservations.html"><i> (reserve your table now!)</i></a>. Here are some of the best (and hottest) DC restaurants that you have to check out.</p>
-			
-			
-		
-		</div>
-
-		<!-- right sidebar -->
-		<div class="dealright">
-		
-			<!-- slide show -->
-			<div style="max-width:300px;">
-			  <img class="dealSlides" src="slideshow1.png" style="width:100%">
-			  <img class="dealSlides" src="slideshow2.png" style="width:100%">
-			  <img class="dealSlides" src="slideshow3.png" style="width:100%">
-			  <img class="dealSlides" src="slideshow4.png" style="width:100%">
-			</div>
-			<script src="ftdc.js"> </script>
-			
-			<!-- hot list -->
-			<div style="max-width:300px;margin-top:25px;">
-				<!-- hot list title -->
-				<div>
-					<img alt="hot deals" src="hot.png" width="20%" style="vertical-align:bottom;" /> &nbsp
-					<p style="display:inline;font-size:40px;font-family:Courier;font-weight:bold;"> 
-						<i style="color:red"> #HotDeals </i>
+	<!-- reservation form -->
+		<div class="resvbody">
+			<!-- main content-->
+			<form name="resv" class="resvmiddle">
+				<img alt="reserve" src="resv.jpg" width="100%" style="margin-bottom:3%" />
+				
+				<fieldset style="margin-bottom:4%;margin-right:3%;float:left;text-align:right;">
+					<legend style="font-family:'lato';font-style:italic;font-size:25;font-weight:bold;">Reservation Information</legend>
+					<p class="resvlabel"> 
+						Restaurant: 
+						<select class="resvinput">
+							<option> Morini </option>
+							<option> Bobby Van's Grill </option>
+							<option> Texas de Brazil </option>
+							<option> CIRCA </option>
+						</select>
+					</p>	
+						
+					<p class="resvlabel">	
+						Pick A Date:
+						<input class="resvinput" type="date" min="2019-03-01" max="2019-12-31" />
 					</p>
-				</div>
+					
+					<p class="resvlabel">	
+						Pick A Time:
+						<input class="resvinput" type="time" value="11:00" min="11:00" max="21:00" step="1800" />
+					</p>
+					
+					<p class="resvlabel">	
+						Guests:
+						<select class="resvinput">
+							<option> 1 </option>
+							<option> 2 </option>
+							<option> 3 </option>
+							<option> 4 </option>
+							<option> 5 and more </option>
+						</select>
+					</p>					
+
+					<p class="resvlabel" style="text-align:left;">	
+						Notes: </br>
+						<textarea name="notes" cols="28" rows="10" style="margin-top:5%;font-size:16;line-height:1.4;"  placeholder="Please let us know important information, such as flavor preference, food allergy, so that we could better serve you and your guests :) "></textarea>
+					</p>					
 				
-				<!-- hot list content -->
-				<img class="deals" alt="deal 1" src="deal1.png" /> 
-				<div class="dealsdetail">
-					<a class="dealslink" target="_blank" href="https://osteriamorini.com/washington-dc/events/#collapse-event-86?utm_source=washingtonorg&utm_medium=referral&utm_campaign=morini-monday">Morini Monday</a>
-					</br> <i> The best deal in town with $13 pastas all night, every Monday </i>
-				</div>
+				</fieldset>
 				
-				<img class="deals" alt="deal 2" src="deal2.png" />
-				<div class="dealsdetail">
-					<a class="dealslink" target="_blank" href="https://www.facebook.com/bobbyvans/photos/a.484968850932/10155896036785933/?type=3&theater&utm_source=washingtonorg&utm_medium=referral">Tomahawk Ribeye</a>
-					</br> <i> 36oz Bone-in TOMAHAWK RIBEYE DINNER for two</i>
-				</div>			
+				<fieldset>
+					<legend style="font-family:'lato';font-style:italic;font-size:25;font-weight:bold;">Contact Information</legend>
+
+					<p class="resvlabel">	
+						Title: 
+						<select class="resvinput">
+							<option> Mr. </option>
+							<option> Mrs. </option>
+							<option> Ms. </option>
+							<option> Miss </option>
+						</select>
+					</p>
+					
+					<p class="resvlabel">	
+						First Name: 
+						<input class="resvinput2" type="text" maxlength="10" />
+					</p>
+					
+					<p class="resvlabel">	
+						Last Name: 
+						<input class="resvinput2" type="text" maxlength="10" />
+					</p>
+					
+					<p class="resvlabel">	
+						Email: 
+						<input class="resvinput2" type="email" name="email" style="width:20.5em;" maxlength="30" />
+					</p>
+
+					<p class="resvlabel">	
+						Phone Number: 
+						<input class="resvinput2" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width:20.5em;margin-bottom:2%;" maxlength="12"/>
+						<input type="checkbox" size="30"> 
+							<span style="font-size:16;"> Save for future use </span>
+						</input>
+					</p>					
+				</fieldset>
 				
-				<img class="deals" alt="deal 3" src="deal3.png" /> 
-				<div class="dealsdetail">
-					<a class="dealslink" target="_blank" href="https://texasdebrazil.com/reservations/?utm_source=washingtonorg&utm_medium=referral">Texas de Brazil</a>
-					</br> <i> Romance is in the air </br>- put a reservation for </br>Valentine's Day! </i>
-				</div>			
-				
-				<img class="deals" alt="deal 4" src="deal4.png" /> 
-				<div class="dealsdetail">
-					<a class="dealslink" target="_blank" href="https://www.circabistros.com/location/chinatown/#menus/?utm_source=washingtonorg&utm_medium=referral">CICRA at C-town</a>
-					</br> <i> Enjoy bottomless mimosas </br> for $19 on weekends!</i>			
-				</div>
-				
-				
-			</div>
+				<p style="margin:5% 20% 0 20%;">
+					<input class="subscribebtn" type="button" value="Book Now" onclick="validateForm()" />
+				</p>				
+			</form>
 			
-		</div>	
-	</section>
+			<!-- right-side ad for subscribe -->
+			<form name="subscribe" class="resvright" align="center">
+				</br>
+				<img alt="subscribe" src="subscribe.gif" style="max-width:300px;" />
+				<p style="margin:0 6% 10% 6%">
+					<input type="email" name="email" placeholder=" Email Address" style="height:50;width:16em;font-size:16;" maxlength="30"/> 
+				</p>
+				
+				<a href="#">
+					<input class="subscribebtn" type="submit" value="Subscribe"/>
+				</a>
+				
+				</br> </br>
+			</form>
+
+		</div>
 	
-	
-	</br> </br> </br> </br> </br> </br>
+		
 	<!-- bottom menu-->
+	<div class="btmmenu" style="100% 0 50% 0"> 
+		</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> 
+		</br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> </br> 
+	</div>
+	
+	
 	<div class="btmmenu" style="background-color:black;opacity:0.65;font-color:white;">
 		</br>
 		<div class="btmquad" style="margin: 0 0 0 10%">
@@ -323,7 +367,7 @@
 		</div>	
 		
 	</div>
-	
+
 
 
 </body>

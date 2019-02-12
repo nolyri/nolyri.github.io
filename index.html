@@ -35,19 +35,118 @@
 					<a href="#">Casual Dining</a>
 					<a href="#">Premium Casual</a>
 					<a href="#">Fine Dining</a>
+					<a onclick="document.getElementById('id03').style.display='block'">
+						<img alt="new" src="new.png" width="25%" style="float:left;margin-right:4%;"/>
+						Calories </br> Calculator
+					</a>
 				</div>
 			</div>
 			<a href="#explore">Explore Around</a>
 			<a href="deal.html">Today's Deal</a>
-			<a href="#reservations">Reservations</a>
+			<a href="reservations.html">Reservations</a>
 			<a href="#faq">FAQ</a>	
 			
 			
 			<a style="float:right;font-size:20px;" onclick="document.getElementById('id01').style.display='block'">
-				<img src="user.png" style="height:28px;width:28px;vertical-align:middle;">
+				<img src="user.png" style="height:28px;width:28px;vertical-align:middle;" />
 				Sign In/Sign Up &nbsp
 			</a>
 		</div>
+	</div>
+
+	<!-- calories calculator (pop up)-->
+	<div id="id03" class="modal_cal">
+		<form class="modal-content animate" action="#">
+			<div class="imgcontainer_cal">
+				<span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close">&times; </span>
+				<img src="logo3.png" style="height:60px;width:auto;" align="middle" />
+				<b style="font-family:arial;font-size:26px;padding-right:10%;"> <i> Calories Calculator <i style="font-size:20px"> (per serving) </i> </i> </b>
+			</div>
+				
+			<div class="container">			
+				<p>
+					<label style="font-size:20"> <b> Breakfast </b> </label>
+					<Select id="B1" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected disabled> Beverage </option>
+						<option value="30">tea</option> <!-- 30 cal -->
+						<option value="380">latte</option> <!-- 380 cal -->
+						<option value="149">whole milk</option> <!-- 149 cal -->
+					</select>
+					
+					<Select id="B2" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected disabled> Main </option>						
+						<option value="190">bagel</option> <!-- 190 cal -->
+						<option value="126">toast</option> <!-- 126 cal -->
+						<option value="118">cereal</option>  <!-- 118 cal -->
+						
+					</select>
+					
+					<Select id="B3" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected disabled> Sides </option>
+						<option value="72"> eggs </option> <!-- 72 cal -->
+						<option value="127"> fries </option> <!-- 127 cal -->
+						<option value="55"> fruits </option> <!-- 55 cal -->
+					</select>					
+				</p>
+				
+				<p>
+					<label style="font-size:20;margin-right:5%;"> <b> Lunch </b> </label>
+					<Select id="L1" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Beverage </option>
+						<option value="101"> soda </option> <!-- 101 cal -->
+						<option value="153"> beer </option> <!-- 153 cal -->
+						<option value="122"> wine </option> <!-- 122 cal -->
+					</select>
+					
+					<Select id="L2" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Main </option>
+						<option value="213"> beef </option> <!-- 213 cal -->
+						<option value="158"> chicken </option> <!-- 158 cal -->
+						<option value="79"> vegetarian </option>  <!-- 79 cal -->
+					</select>
+					
+					<Select id="L3" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Sides </option>
+						<option value="149"> pasta </option> <!-- 149 cal -->
+						<option value="127"> fries </option> <!-- 127 cal -->
+						<option value="73"> salad </option> <!-- 73 cal -->
+					</select>					
+				</p>
+
+				<p>
+					<label style="font-size:20;margin-right:4.4%;"> <b> Dinner </b> </label>
+					<Select id="D1" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Beverage </option>
+						<option value="101"> soda </option> <!-- 101 cal -->
+						<option value="153"> beer </option> <!-- 153 cal -->
+						<option value="122"> wine </option> <!-- 122 cal -->
+					</select>
+					
+					<Select id="D2" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Main </option>
+						<option value="213"> beef </option> <!-- 213 cal -->
+						<option value="158"> chicken </option> <!-- 158 cal -->
+						<option value="79"> vegetarian </option>  <!-- 79 cal -->
+					</select>
+					
+					<Select id="D3" style="font-family:courier;font-size:16;font-weight:bold;width:8em;padding-left:10px;margin-left:10px;">
+						<option value="0" selected="ture" disabled> Sides </option>
+						<option value="149"> pasta </option> <!-- 149 cal -->
+						<option value="127"> fries </option> <!-- 127 cal -->
+						<option value="73"> salad </option> <!-- 73 cal -->
+					</select>						
+				</p>
+				
+				<p align="center" style="text-align:center;font-size:20;line-height:1.5;margin-top:2%;">
+					<label style="" > <b> Total calories: </b> </label>
+					<output disabled id="calNumber" style="padding-left:5%;font-size:25;">  </output>
+				</p>
+				
+				<input type="button" value="Calculate" class="btn" onclick="calCalculator()" />
+				
+				<label style="color:grey;letter-spacing:-0.1;"> <i> All calculations are based on estimations. FTDC reserves the right of final explanation.</i> </label>
+			</div>
+		</form>
 	</div>
 	
 	<!-- sign in window (pop up)-->
@@ -55,7 +154,7 @@
 		<form class="modal-content animate" action="#">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times; </span>
-				<img src="logo3.png" style="height:120px;width:auto;">
+				<img src="logo3.png" style="height:120px;width:auto;" />
 			</div>
 			
 			<div class="container">
@@ -119,14 +218,14 @@
 	
 	<!-- intro -->
 	<div style="display:inline-block;vertical-align:top;">
-		<img alt="dc food" src="intro.png" style="margin-top:0.2%;width:30%;vertical-align:top;" />
+		<img alt="dc food" src="intro.png" style="margin-top:3.6%;width:30%;vertical-align:top;" />
 		<div style="display:inline-block;max-width:70%;float:right;" align="left">
 			<p class="intro">
-			Dig in to one of the country’s hottest restaurant scenes </br>– the nation’s capital is a can’t-miss culinary destination.
+			Dig in to one of the country's hottest restaurant scenes </br> -- the nation's capital is a can't-miss culinary destination.
 			</p>
 			
 			<p class="intro2">
-			When you visit Washington, DC, you’ll experience a dining scene as colorful and eclectic as America itself. The District is rolling in accolades, as the city received its second Michelin Guide and was named restaurant city of the year by Bon Appétit and hottest food city by Zagat in 2016. That means you can expect each meal at every restaurant to be different. From crave-worthy dishes served by celebrity chefs to chili-smothered half-smokes served at a diner, DC’s local flavor has one thing in common: it’s all delicious. Get a taste of what’s to come.
+			When you visit Washington, DC, you'll experience a dining scene as colorful and eclectic as America itself. The District is rolling in accolades, as the city received its second Michelin Guide and was named restaurant city of the year by Bon Appetit and hottest food city by Zagat in 2016. That means you can expect each meal at every restaurant to be different. From crave-worthy dishes served by celebrity chefs to chili-smothered half-smokes served at a diner, DC's local flavor has one thing in common: it's all delicious. Get a taste of what's to come.
 			</p>
 		</div>
 	</div>
@@ -154,7 +253,7 @@
 			</p>
 			
 			<p class="intro2">
-			The Michelin selections are in, and DC’s dining scene is as hot as it’s ever been. So why all the buzz? The District is home to a distinct landscape of diverse cuisines and perfectly cooked dishes, all of which are waiting to be devoured. Don’t just take our word for it. Check out these Michelin Guide highlights and make sure to book your tables early.
+			The Michelin selections are in, and DC's dining scene is as hot as it's ever been. So why all the buzz? The District is home to a distinct landscape of diverse cuisines and perfectly cooked dishes, all of which are waiting to be devoured. Don't just take our word for it. Check out these Michelin Guide highlights and make sure to book your tables early.
 			</p>
 		</div>
 	</div>
