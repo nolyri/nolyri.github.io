@@ -10,6 +10,7 @@
 		position: fixed;
 		top: 0;
 		width: 100%;  
+		z-index: 1;
 	}
 	
 	.navbar a {
@@ -248,7 +249,7 @@
 	
 /** divisions for deal page**/
 	.dealbody {
-		width: 100%;
+		width: 99%;
 		height: 700px;
 		padding: 10px;
 		display: inline-block;
@@ -273,6 +274,35 @@
 	.dealSlides {
 		display: none;
 	}
+	
+	.slidecontainer {
+		position: relative;
+		max-width: 300px;
+	}
+	
+	.slidecontainer .leftbtn {
+		position: absolute;
+		top: 35%;
+		left: 0;
+		padding: 3%;
+		opacity: 0.5;
+		font-size: 20;
+		font-weight: bold;
+	}	
+	
+	.slidecontainer .rightbtn {
+		position: absolute;
+		top: 35%;
+		right: 0;
+		padding: 3%;
+		opacity: 0.5;
+		font-size: 20;
+		font-weight: bold;
+	}
+
+	.leftbtn:hover, .rightbtn:hover {
+		opacity: 0.8;
+	}	
 	
 /** hot deal list **/
 	.deals {

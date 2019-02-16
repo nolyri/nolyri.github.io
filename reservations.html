@@ -182,7 +182,7 @@
 	
 	<!-- sign up window (pop up) -->
 	<div id="id02" class="modal">
-		<form class="modal-content animate" action="#">
+		<form class="modal-content animate" action="#" name="sform">
 			<div class="imgcontainer">
 				<span onclick="document.getElementById('id02').style.display='none';document.getElementById('id01').style.display='none'" class="close" title="Close">&times; </span>
 				<img src="logo3.png" style="height:120px;width:auto;">
@@ -190,19 +190,19 @@
 			
 			<div class="container">
 				
-				<label for="uname" class="rht"> <b> Username &nbsp</b> </label>
+				<label for="uname" class="rht"> <b> Username &nbsp </b> </label>
 				<input style="width:70%;" type="text" placeholder="Enter Username" name="uname"required>
 				
-				<label for="uname" class="rht"> <b> Email &nbsp</b> </label>
-				<input style="width:70%;" type="text" placeholder="Enter Email" name="uname"required>
+				<label for="uname" class="rht"> <b> Email &nbsp </b> </label>
+				<input style="width:70%;" type="text" placeholder="Enter Email" name="eml"required>
 				
-				<label for="psw" class="rht"> <b> Password &nbsp</b> </label>
+				<label for="psw" class="rht"> <b> Password &nbsp </b> </label>
 				<input style="width:70%" type="password" placeholder="Enter Password" name="psw" required>
 				
-				<label for="psw" class="rht"> <b> Repeat Password &nbsp</b> </label>
-				<input style="width:70%" type="password" placeholder="Enter Password Again" name="psw" required>
-				
-				<button type="submit" class="btn">Sign Up</button>
+				<label for="psw" class="rht"> <b> Repeat Password &nbsp </b> </label>
+				<input style="width:70%" type="password" placeholder="Enter Password Again" name="rptpsw" required>
+
+				<button type="submit" class="btn" onclick="checkForm()">Sign Up</button>
 				
 			</div>
 		</form>
@@ -258,7 +258,7 @@
 
 					<p class="resvlabel" style="text-align:left;">	
 						Notes: </br>
-						<textarea name="notes" cols="28" rows="10" style="margin-top:5%;font-size:16;line-height:1.4;"  placeholder="Please let us know important information, such as flavor preference, food allergy, so that we could better serve you and your guests :) "></textarea>
+						<textarea name="notes" cols="28" rows="10" style="margin-top:5%;font-size:16;line-height:1.4;max-width:98%;"  placeholder="Please let us know important information, such as flavor preference, food allergy, so that we could better serve you and your guests :) "></textarea>
 					</p>					
 				
 				</fieldset>
@@ -287,13 +287,13 @@
 					</p>
 					
 					<p class="resvlabel">	
-						Email: 
+						Email: </br>
 						<input class="resvinput2" type="email" name="email" style="width:20.5em;" maxlength="30" />
 					</p>
 
 					<p class="resvlabel">	
 						Phone Number: 
-						<input class="resvinput2" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width:20.5em;margin-bottom:2%;" maxlength="12"/>
+						<input class="resvinput2" type="tel" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" style="width:20.5em;margin-bottom:2%;" maxlength="12"/> </br>
 						<input type="checkbox" size="30"> 
 							<span style="font-size:16;"> Save for future use </span>
 						</input>
@@ -301,7 +301,7 @@
 				</fieldset>
 				
 				<p style="margin:5% 20% 0 20%;">
-					<input class="subscribebtn" type="button" value="Book Now" onclick="validateForm()" />
+					<input class="subscribebtn" type="button" value="Book Now" />
 				</p>				
 			</form>
 			
@@ -313,7 +313,7 @@
 					<input type="email" name="email" placeholder=" Email Address" style="height:50;width:16em;font-size:16;" maxlength="30"/> 
 				</p>
 				
-				<a href="#">
+				<a href="#" style="margin:0 6% 10% 6%">
 					<input class="subscribebtn" type="submit" value="Subscribe"/>
 				</a>
 				
@@ -333,23 +333,23 @@
 	<div class="btmmenu" style="background-color:black;opacity:0.65;font-color:white;">
 		</br>
 		<div class="btmquad" style="margin: 0 0 0 10%">
-			<a href="#" style="font-weight:bold;font-size:20;"> Site Map </a>
-			<p> <a href="#"> Homepage </a> </p>
+			<a style="font-weight:bold;font-size:20;hover:none;"> Site Map </a>
+			<p> <a href="index.html"> Homepage </a> </p>
 			<p> <a href="#"> Categories </a> </p>
-			<p> <a href="#"> Hot Deals </a> </p>
+			<p> <a href="deal.html"> Hot Deals </a> </p>
 			<p> <a href="#"> About </a> </p>
 		</div>
 
 		<div class="btmquad">
-			<a href="#" style="font-weight:bold;font-size:20;"> Help </a>
+			<a style="font-weight:bold;font-size:20;"> Help </a>
 			<p> <a href="#"> Disclaimer </a> </p>
 			<p> <a href="#"> Privacy Notice</a> </p>
-			<p> <a href="#"> Contact Us</a> </p>
+			<p> <a href="mailto:ftdcteam@ftdc.org"> Contact Us</a> </p>
 			<p> <a href="#"> Career</a> </p>
 		</div>
 		
-		<div class="btmquad"">
-			<a href="#" style="font-weight:bold;font-size:20;"> Follow Us </a>
+		<div class="btmquad">
+			<a style="font-weight:bold;font-size:20;"> Follow Us </a>
 			<p> <a href="#"> Facebook </a> </p>
 			<p> <a href="#"> Twitter </a> </p>
 			<p> <a href="#"> Newsletter </a> </p>
@@ -357,7 +357,7 @@
 		</div>
 
 		<div class="btmquad2">
-			<a href="#" style="font-weight:bold;font-size:20;opacity:100%;padding-right:22%;"> Downloads </a> 
+			<a style="font-weight:bold;font-size:20;opacity:100%;padding-right:22%;"> Downloads </a> 
 		
 			<a href="#"> <img alt="Get it on Google Play" src="google.png" style="height:8%;width:auto;padding-right:15%"> </a> 
 			<a href="#"> <img alt="Download on the App Store" src="apple.png" style="height:7%;width:auto;padding-right:15%"> </a> 
